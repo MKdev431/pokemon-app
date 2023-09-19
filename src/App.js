@@ -21,7 +21,7 @@ function App() {
       setPokemon(res.data.results.map(p => p.name));
     });
 
-    return () => cancel();
+    return () => cancel;
   }, [currentPageUrl]);
 
   function gotoNextPage() {
